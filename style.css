@@ -1,0 +1,210 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wght@0,500;1,400&family=Work+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Seletor para adicionar fonte-family local*/
+@font-face {
+    font-family: 'adroid';
+    src: url(fontes/idroid.otf) format('opentype'); 
+}
+
+/* Cores pseudo-clase que definem as configurações para a raiz de uma árvore */
+:root {
+    --cor0: #c5ebdc;
+    --cor1: #83E1AD;
+    --cor2: #3DDC84;
+    --cor3: #2FA866;
+    --cor4: #1A5C37;
+    --cor5: #063D1E;
+    --fonte0:  Arial, Verdana, Helvetica, sans-serif;
+    --fonte1: 'adroid';
+}
+ 
+/* Seletores globais */
+* {
+    margin: 0px;
+    padding: 0%; 
+}
+
+body {
+    background-color: #EBE5C5;
+    font-family: var(--fonte0);
+}
+                  
+header {
+    color: #FFFFFF; 
+    background-image: linear-gradient(to bottom,  var(--cor3), var(--cor5));
+    text-align: center;
+    min-height: 150px; 
+    padding-top: 40px;
+}
+
+header > h1 {
+    font-family: 'Bebas Neue'; 
+    font-size: 3em;    
+    font-weight: normal; 
+    text-shadow: 2px 2px 0px rgb(0 0 0 / 27%); 
+    margin-bottom:  20px;
+}
+
+header > p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2em;  
+    max-width: 600px;
+    margin: auto;   
+    padding: 0px 10px 50px 10px;   
+    text-shadow: 2px 2px 0px rgb(0 0 0 / 32%);
+}
+                           
+nav { 
+    background-color: var(--cor5);
+    box-shadow: -1px 6px 5px 0px rgb(60 60 60 / 29%); /*sombra na caixa */
+    padding: 10px;
+}
+
+nav > a {
+    color: var(--cor1);
+    font-weight: bolder;  /* Especifica o peso de uma fonte*/
+    text-decoration-line: none; /* remover a linha de baixo*/
+    padding: 10px;
+}
+
+nav > a:hover {
+    background-color: var(--cor3);
+    border-radius: 4px;    
+    transition: 0.5s;
+}
+
+main {
+    min-width: 300px;
+    max-width: 1000px;          
+    margin: auto;  
+    margin-bottom: 30px;    
+    padding: 20px;    
+    border-radius: 1px 1px 10px 10px;  /* esquerda superior, direita superio, Direita inferior, esquerda inferior */
+    background-color: #FFFFFF;
+    box-shadow: 0px 0px 9px 0px rgb(1 24 26 / 51%);
+  /*  text-align: center;     alinhamento ao centro "apenas a imagem bugdroid" */  
+}
+
+main  h1 {
+    text-indent: 2px;
+    font-family: var(--fonte1);
+    color: var(--cor5);
+    font-weight: normal;
+    font-size: 29px;
+    line-height: 34px;
+}
+
+main h2 {
+    font-family: 'adroid', Verdana,  sans-serif;
+    color: var(--cor4);
+    font-weight: normal;
+    font-size: 1.3em;
+    text-indent: 8px;
+    text-align: left;
+    background-image: linear-gradient(to right, var(--cor1), transparent);
+}
+
+main p {  
+    padding: 15px 0px;
+    text-align: justify;
+    text-indent: 30px;
+    line-height: 2em;  /*permite controlar o espaçamento entre as linhas de um texto */
+    font-size: 1em;
+}
+
+main strong {     
+  color: var(--cor5);
+  font-weight: bold;
+}
+
+main a {
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--cor5);
+    background-color: var(--cor1); 
+    padding: 2px 5px;
+}
+
+main a:hover {
+    text-decoration: underline;
+    color: var(--cor4);
+}
+
+main .link::after {
+    content: '\00A0\1F517';
+}
+
+main img{
+    width: 100%;
+}
+
+main #bugdroid {
+    max-width: 350px;
+    display: block;
+    margin: auto; 
+}
+
+div.video {
+    position: relative;
+    background-color: var(--cor5);
+    height: 0px;
+    margin-left: -20px;
+    margin-right: -20px;
+    margin-bottom: 36px;
+    padding-bottom: 60%;   
+}
+
+div.video > iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+aside {
+    padding: 10px;   
+    border-radius: 10px;
+    background-color: var(--cor1);
+    box-shadow: -1px 3px 14px 0px rgba(0, 0, 0, 0.281);
+}
+
+aside h3 {
+    background-color: var(--cor4);
+    color: white;
+    margin: -10px -10px 0px -10px;
+    padding: 10px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+aside P {
+    padding-top: 13px;
+}
+
+aside ul {       /* essa lista não é compativel com todo tipo de navegador */
+    list-style-type: '\2714\0020\0020';    /* 2714 é o emoji de (Check), 0020 é um (espaço) entre o emoji e o conteundo, */
+    columns: 2;
+    list-style-position: inside;  
+}
+
+footer {
+    background-color: var(--cor5);
+    color: white;
+    text-align: center;
+    padding: 3px;
+    font-size: 15px;
+}
+
+footer a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+footer a:hover {
+    color: var(--cor1);
+    text-decoration: underline;
+}
