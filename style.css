@@ -2,13 +2,11 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wght@0,500;1,400&family=Work+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-/* Seletor para adicionar fonte-family local*/
 @font-face {
     font-family: 'adroid';
     src: url(fontes/idroid.otf) format('opentype'); 
 }
 
-/* Cores pseudo-clase que definem as configurações para a raiz de uma árvore */
 :root {
     --cor0: #c5ebdc;
     --cor1: #83E1AD;
@@ -20,7 +18,6 @@
     --fonte1: 'adroid';
 }
  
-/* Seletores globais */
 * {
     margin: 0px;
     padding: 0%; 
@@ -58,14 +55,14 @@ header > p {
                            
 nav { 
     background-color: var(--cor5);
-    box-shadow: -1px 6px 5px 0px rgb(60 60 60 / 29%); /*sombra na caixa */
+    box-shadow: -1px 6px 5px 0px rgb(60 60 60 / 29%);
     padding: 10px;
 }
 
 nav > a {
     color: var(--cor1);
-    font-weight: bolder;  /* Especifica o peso de uma fonte*/
-    text-decoration-line: none; /* remover a linha de baixo*/
+    font-weight: bolder;
+    text-decoration-line: none;
     padding: 10px;
 }
 
@@ -81,10 +78,9 @@ main {
     margin: auto;  
     margin-bottom: 30px;    
     padding: 20px;    
-    border-radius: 1px 1px 10px 10px;  /* esquerda superior, direita superio, Direita inferior, esquerda inferior */
+    border-radius: 1px 1px 10px 10px;
     background-color: #FFFFFF;
-    box-shadow: 0px 0px 9px 0px rgb(1 24 26 / 51%);
-  /*  text-align: center;     alinhamento ao centro "apenas a imagem bugdroid" */  
+    box-shadow: 0px 0px 9px 0px rgb(1 24 26 / 51%); 
 }
 
 main  h1 {
@@ -110,7 +106,7 @@ main p {
     padding: 15px 0px;
     text-align: justify;
     text-indent: 30px;
-    line-height: 2em;  /*permite controlar o espaçamento entre as linhas de um texto */
+    line-height: 2em;
     font-size: 1em;
 }
 
